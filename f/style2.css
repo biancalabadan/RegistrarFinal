@@ -10,7 +10,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
+}	
 
 .logonav{
   background: #00004C;
@@ -122,16 +122,22 @@ text-align:center;
     padding: 0;
   }
 }
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
-input[type="text"]{
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid steelblue;
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #A4945C;
 }
