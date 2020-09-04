@@ -1,22 +1,27 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Enrollment</title>
-		<link rel="stylesheet" type="text/css" href="style2.css">
-	</head>
-
-	<body>
-	<?php
-		$nm=$_GET["nm"];
-		$gender=$_GET["gd"];
-		$yc=$_GET["yc"];
-		$contact=$_GET["ct"];
+<body>
+<?php
+		$con=mysql_connect("localhost","root","");
 		
-		mysql_connect("localhost","root","");
-		mysql_select_db("registrar_info");
-		mysql_query("insert into student_info values"('$nm','$gender','$yc','$contact'));
+		if (!$con)
+		{
+			die('Could not connect: '.mysql_error());
+		}
 		
-	?>
-	</body>
+		mysql_select_db("registrar_info", $con);
+		
+		$sql="INSERT INTO student_info (name, gender, yc, contact)
+		VALUES ('$_POST[name]','$_POST[gender]','$_POST[yc]','$_POST[contact]')";
+		
+		if (!mysql_query($sql,$con))
+		{
+			die('Error: '.mysql_error());
+		}
+		
+		echo "Record added.";
+		
+		mysql_close($con);
+		
+?>
+</body>
 </html>
