@@ -47,7 +47,45 @@
 
 		<div class="row">
   <div class="leftcolumn">
-    <form name="form1" action="info.php" method="post">
+	  <?php
+         if(isset($_POST['add'])) {
+            $dbhost = 'localhost';
+            $dbuser = 'root';
+            $dbpass = '';
+            $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+            
+            if(! $conn ) {
+               die('Could not connect: ' . mysql_error());
+            }
+            
+            if(! get_magic_quotes_gpc() ) {
+               $s_name = addslashes ($_POST['name']);
+               $S_gender = addslashes ($_POST['gender']);
+			   $s_yc = addslashes ($_POST['yc']);
+               $S_contact = addslashes ($_POST['contact']);
+            }else {
+               $s_name = $_POST['name'];
+               $s_gender = $_POST['gender'];
+			   $s_yc = $_POST['yc'];
+               $s_contact = $_POST['contact'];
+            }
+            
+            $sql = "INSERT INTO student_info ". "(name, gender, yc, 
+               contact) ". "VALUES('$s_name','$s_gender','$s_yc','$s_contact')";
+               
+            mysql_select_db('registrar_info');
+            $retval = mysql_query( $sql, $conn );
+            
+            if(! $retval ) {
+               die('Could not enter data: ' . mysql_error());
+            }
+            
+            echo "Entered data successfully";
+            
+            mysql_close($conn);
+         }else {
+            ?>
+    <form name="form1" action="<?php $_PHP_SELF ?>" method="post">
 		<table>
 			<tr>
 				<td>Full Name :</td>
@@ -95,10 +133,13 @@
 			</tr>
 			
 			<tr>
-				<td><input type="submit" name="btn" value="Submit"></td>
+				<td><input type="submit" name="add" id="add" value="Submit"></td>
 			</tr>
 		</table>
       </form>
+	<?php
+		}
+	?>
 
     </div>
   </div>
