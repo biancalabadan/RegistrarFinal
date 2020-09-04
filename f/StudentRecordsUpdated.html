@@ -23,13 +23,13 @@
 			}
 			
 			/* Style the top navigation bar */
-			.topnav {
+			.navbar {
 				overflow:hidden;
 				background-color:#996515;
 			}
 			
 			/* Style the topnav links */
-			.topnav a {
+			.navbar a {
 			  float:left;
 			  display:16px;
 			  color:white;
@@ -38,12 +38,12 @@
 			  text-decoration:none;
 			}
 			
-			.dropdown {
+			.subnav {
 			  float:left;
 			  overflow:hidden;
 			}
 
-			.dropdown .dropbtn {
+			.subnav .subnavbtn {
 			  font-size:16px;  
 			  border:none;
 			  outline:none;
@@ -54,11 +54,11 @@
 			  margin:0;
 			}
 			
-			.topnav a:hover, .dropdown:hover .dropbtn {
+			.navbar a:hover, .subnav:hover .subnavbtn {
 			  background-color: dimgray;
 			}
 			
-			.dropdown-content {
+			.subnav-content {
 			  display: none;
 			  position: absolute;
 			  left:0;
@@ -67,18 +67,18 @@
 			  z-index: 1;
 			}
 			
-			.dropdown-content a {
+			.subnav-content a {
 			  float:left;
 			  color:white;
 			  text-decoration:none;
 			}
 			
-			.dropdown-content a:hover {
+			.subnav-content a:hover {
 			  background-color:#eee;
 			  color:black;
 			}
 			
-			.dropdown:hover .dropdown-content {
+			.subnav:hover .subnav-content {
 			  display: block;
 			}
 			
@@ -125,36 +125,38 @@
 		</header>
 		
 		<nav>
-			<div class="topnav">
+			<div class="navbar">
 				<a href="reg.htm">Home</a>
 				
-				<div class="dropdown">
-					<button class="dropbtn">Admission</button>
-					<div class="dropdown-content">
+				<div class="subnav">
+					<button class="subnavbtn">Admission</button>
+					<div class="subnav-content">
 						<a href="#option1">Option1</a>
 						<a href="#option2">Option2</a>
 						<a href="#option3">Option3</a>
 					</div>
 				</div>
 				
-				<div class="dropdown">
-					<button class="dropbtn">Records</button>
-					<div class="dropdown-content">
+				<div class="subnav">
+					<button class="subnavbtn">Records</button>
+					<div class="subnav-content">
 						<a href="StudentRecordsUpdated.html">Students</a>
 						<a href="Check.html">Check Project/Violation</a>
 					</div>
 				</div>
 				
-				<div class="dropdown">
-					<button class="dropbtn">Request
+				<div class="subnav">
+					<button class="subnavbtn">Request
 					</button>
-					<div class="dropdown-content">
+					<div class="subnav-content">
 						<a href="transcript.htm">Transcript of Records</a>
 						<a href="transfer.htm">Transfer Credentials</a>
 						<a href="diploma.htm">Authenticated Copy of Diploma</a>
 						<a href="course.htm">Course Description</a>
 					</div>
 				</div>
+				
+				<a href="#contact">Contact</a>
 			</div>
 		</nav>
 		
