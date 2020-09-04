@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Student Records</title>
+		
+		<style>
+			body {
+				padding:10px;
+				background-color:#f1f1f1;
+			}
+			
+			/* Header or Blog Title */
+			header {
+				padding:30px;
+				background-color:midnightblue;
+			}
+			
+			header img {
+				max-width: 100%;
+				height: auto;
+			}
+			
+			/* Style the top navigation bar */
+			.topnav {
+				overflow:hidden;
+				background-color:#996515;
+			}
+			
+			/* Style the topnav links */
+			.topnav a {
+			  float:left;
+			  display:16px;
+			  color:white;
+			  text-align:center;
+			  padding: 14px 16px;
+			  text-decoration:none;
+			}
+			
+			.dropdown {
+			  float:left;
+			  overflow:hidden;
+			}
+
+			.dropdown .dropbtn {
+			  font-size:16px;  
+			  border:none;
+			  outline:none;
+			  color:white;
+			  padding:14px 16px;
+			  background-color:inherit;
+			  font-family:inherit;
+			  margin:0;
+			}
+			
+			.topnav a:hover, .dropdown:hover .dropbtn {
+			  background-color: dimgray;
+			}
+			
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  left:0;
+			  background-color:brown;
+			  width:100%;
+			  z-index: 1;
+			}
+			
+			.dropdown-content a {
+			  float:left;
+			  color:white;
+			  text-decoration:none;
+			}
+			
+			.dropdown-content a:hover {
+			  background-color:#eee;
+			  color:black;
+			}
+			
+			.dropdown:hover .dropdown-content {
+			  display: block;
+			}
+			
+			}
+			
+			/* Spaces on top of table */
+			.table1 {
+				margin-top:20px;
+			}
+			
+			/* style for text in h1 in the article section */ 
+			article h1 {
+				font-family:Arial;
+				font-color:#F2F1E7;
+				text-align:center;
+				font-size:45px;
+			}
+			
+			/* style in table texts */
+			.table1 th, td {
+				font-family:Arial;
+				font-size:20px;
+			}
+			
+			/* Footer */
+			footer {
+				padding:20px;
+				position:fixed;
+				bottom:0;
+				left:0;
+				width:100%;
+				background-color: #A4945C;
+				text-align:center;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src="logo.png" alt="Xavier University Logo">
+			<br />
+			<br />
+		</header>
+		
+		<nav>
+			<div class="topnav">
+				<a href="#home">Home</a>
+				<a href="#contact">Admission</a>
+				<a href="#contact">Records</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn">Request
+					</button>
+					<div class="dropdown-content">
+						<a href="transcript.htm">Transcript of Records</a>
+						<a href="transfer.htm">Transfer Credentials</a>
+						<a href="diploma.htm">Authenticated Copy of Diploma</a>
+						<a href="course.htm">Course Description</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<article>
+			<h1>Student Records</h1>
+			<table class="table1" align="center" border="1" cellpadding="10">
+				<tr>
+					<th>Name</th>
+					<th>Contact</th>
+					<th>Year & Course</th>
+					<th>Status (Projects & Violations)</th>
+					<th>Signing of Clearance</th>
+				</tr>
+				
+				<tr>
+					<td>Name</td>
+					<td>Contact</td>
+					<td>Year & Course</td>
+					<td>Status (Projects & Violations)</td>
+					<td><input type="checkbox" id="check" name="check" value="complete">&nbsp;Signing of Clearance</td>
+				</tr>
+			</table>
+		</article>
+		
+		<footer>
+			<small>
+				School Registrar <br />
+				@2020 All Rights Reserved.Registrar®
+			</small>
+		</footer>
+	</body>
+</html>
