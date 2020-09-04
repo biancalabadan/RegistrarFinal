@@ -47,42 +47,58 @@
 
 		<div class="row">
   <div class="leftcolumn">
-    <div class="card">
-     
-        <label for="name">Full Name</label>
-        <input type="text" name="name" id="name"><br>
-        <br><label>Gender:</label>
-        <input type="radio" id="male" name="gender"><label for="male">Male</label>
-
-        <input type="radio" id="female" name="gender"><label for="female">Female</label><br>
-     
-        <br><label for="yr">Year & Course</label>
-        <input type="text" name="yr" id="yr"><br>
-      
-        <br><label for="con">Contact</label>
-        <input type="text" name="con" id="con"><br>
-        <br>
-        <input type="checkbox" id="app">
-        <label for="en">Application Form</label><br>
-      
-        <br><input type="checkbox" id="trans">
-        <label for="trans">Transcript of Records</label><br>
-     
-        <br><input type="checkbox" id="cert">
-        <label for="cert">Certificate of Good Moral</label><br>
-      
-        <br><input type="checkbox" id="med">
-        <label for="med">Medical Certificate</label><br>
-      
-        <br><input type="checkbox" id="pp">
-        <label for="pp">2x2 Passport Picture(2pcs.)</label><br>
-    
-        <br><input type="checkbox" id="nso">
-        <label for="nso">NSO Birth Certificate</label><br>
-      
-        <br><button type="submit" name="submit">Submit</button>
-        
-      </div>
+    <form name="form1" action="" method="post">
+		<table>
+			<tr>
+				<td>Full Name :</td>
+				<td><input type="text" name="name" id="name" required></td>
+			</tr>
+		
+			<tr>
+				<td>Gender :</td>
+				<td>
+					<input type="radio" name="gender" id="gender" value="m" required>Male
+					<input type="radio" name="gender" id="gender" value="f" required>Female
+				</td>
+			</tr>
+		 
+			<tr>
+				<td>Year & Course :</td>
+				<td><input type="text" name="yc" id="yc" required></td>
+			</tr>
+			
+			<tr>
+				<td>Contact :</td>
+				<td><input type="text" name="contact" id="contact" required></td>
+			</tr>
+			
+			<tr>
+				<td>Requirements :</td>
+				<td><input type="checkbox" name="req" id="req" required>
+					<label for="en">Application Form</label><br>
+				  
+					<br><input type="checkbox" id="trans" required>
+					<label for="trans">Transcript of Records</label><br>
+				 
+					<br><input type="checkbox" id="cert" required>
+					<label for="cert">Certificate of Good Moral</label><br>
+				  
+					<br><input type="checkbox" id="med" required>
+					<label for="med">Medical Certificate</label><br>
+				  
+					<br><input type="checkbox" id="pp" required>
+					<label for="pp">2x2 Passport Picture(2pcs.)</label><br>
+				
+					<br><input type="checkbox" id="nso" required>
+					<label for="nso">NSO Birth Certificate</label><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><input type="submit" name="btn" value="Submit" onClick="aa();"></td>
+			</tr>
+		</table>
+      </form>
 
     </div>
   </div>
@@ -99,5 +115,14 @@
 			<small>School Registrar<br />
 			@2020 All Rights Reserved Registrar</small
 		</footer>
+		<script type="text/javascript">
+		function aa()
+		{
+			var info;
+			info=new newinfo();
+			info.open("GET", "info.php?nm="+document.getElementById("name").value+"&gd="+document.getElementById("gender").value+"&yc="+document.getElementById("yc").value+"&ct="+document.getElementById("contact").value, false);
+			info.send(null);
+		}
+		</script>
 	</body>
 </html>
