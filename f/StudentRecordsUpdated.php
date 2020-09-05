@@ -165,7 +165,6 @@
 					<th>Gender</th>
 					<th>Year & Course</th>
 					<th>Contact</th>
-					<th>Signing of Clearance</th>
 				</tr>
 				
 				<?php
