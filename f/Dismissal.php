@@ -61,7 +61,7 @@
 				<button class="subnavbtn">Request <i class="fa fa-caret-down"></i></button>
 				<div class="subnav-content">
 					<a href="Transcript.htm">Transcript of Records</a>
-					<a href="Transfer.htm">Transfer Credentials</a>
+					<a href="Transfer.html">Transfer Credentials</a>
 					<a href="diploma.htm">Authenticated Copy of Diploma</a>
 				</div>
 			</div>
