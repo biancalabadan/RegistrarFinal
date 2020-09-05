@@ -130,7 +130,6 @@
 					<button class="subnavbtn"><a href="Admission.html">Admission <i class="fa fa-caret-down"></i></a></button>
 					<div class="subnav-content">
 						<a href="Enrollment.html">Enrollment</a>
-						<a href="Transfer.html">Transfer</a>
 						<a href="Dismissal.php">Dismissal</a>
 					</div>
 				</div>
@@ -147,13 +146,10 @@
 					<button class="subnavbtn">Request <i class="fa fa-caret-down"></i></button>
 					<div class="subnav-content">
 						<a href="transcript.htm">Transcript of Records</a>
-						<a href="transfer.htm">Transfer Credentials</a>
 						<a href="diploma.htm">Authenticated Copy of Diploma</a>
 						<a href="course.htm">Course Description</a>
 					</div>
 				</div>
-				
-				<a href="#contact">Contact</a>
 			</div>
 		</nav>
 		
