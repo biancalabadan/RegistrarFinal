@@ -131,14 +131,14 @@
 					<div class="subnav-content">
 						<a href="Enrollment.html">Enrollment</a>
 						<a href="Transfer.html">Transfer</a>
-						<a href="Dismissal.html">Dismissal</a>
+						<a href="Dismissal.php">Dismissal</a>
 					</div>
 				</div>
 				
 				<div class="subnav">
 					<button class="subnavbtn">Records <i class="fa fa-caret-down"></i></button>
 					<div class="subnav-content">
-						<a href="StudentRecordsUpdated.html">Students</a>
+						<a href="StudentRecordsUpdated.php">Students</a>
 						<a href="Check.html">Check Project/Violation</a>
 					</div>
 				</div>
