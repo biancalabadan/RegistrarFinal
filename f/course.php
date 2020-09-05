@@ -124,7 +124,7 @@ img {
 </head>
 <body>
   <div class="header">
-    <img src="xu.png" alt="Paris">
+    <img src="xu.png" alt="Xavier University Logo">
   </div>
 <div class="navbar">
   <a href="reg.htm">Home</a>
