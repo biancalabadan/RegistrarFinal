@@ -127,7 +127,7 @@
 				<a href="home.html">Home</a>
 				
 				<div class="subnav">
-					<button class="subnavbtn"><a href="Admission.html">Admission <i class="fa fa-caret-down"></i></a></button>
+					<button class="subnavbtn">Admission <i class="fa fa-caret-down"></i></button>
 					<div class="subnav-content">
 						<a href="Enrollment.html">Enrollment</a>
 						<a href="Dismissal.php">Dismissal</a>
@@ -145,9 +145,9 @@
 				<div class="subnav">
 					<button class="subnavbtn">Request <i class="fa fa-caret-down"></i></button>
 					<div class="subnav-content">
-						<a href="transcript.htm">Transcript of Records</a>
+						<a href="Transcript.htm">Transcript of Records</a>
+						<a href="Transfer.htm">Transfer</a>
 						<a href="diploma.htm">Authenticated Copy of Diploma</a>
-						<a href="course.htm">Course Description</a>
 					</div>
 				</div>
 			</div>
