@@ -82,12 +82,13 @@ footer {
     <img src="xu.png" alt="Xavier University Logo">
   </div>
 <div class="navbar">
-  <a href="home.html">Home</a>
+  <a href="reg.htm">Home</a>
   <div class="subnav">
     <button class="subnavbtn">Admission <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
       <a href="Enrollment.html">Enrollment</a>
-      <a href="Dismissal.php">Dismissal</a>
+      <a href="Transfer.html">Transfer</a>
+      <a href="Dismissal.html">Dismissal</a>
     </div>
   </div> 
   <div class="subnav">
@@ -103,22 +104,35 @@ footer {
       <a href="transcript.htm">Transcript of Records</a>
       <a href="tranfer.htm">Transfer Credentials</a>
       <a href="diploma.htm">Authenticated Copy of Diploma</a>
+      <a href="course.htm">Course Description</a>
     </div>
   </div>
+  <a href="#contact">Contact</a>
 </div>
 <div class= "main">
    <h2 style="background-color:royalblue;">Request Official Transcript</h2>
   <p style="color:blue;">Please fill th form below.</p>
   <form>
   <label for="quan">Quantity</label>
-  <input type="quantity" id="quan" name="quan"><br><br>
+  <input type="name" id="name" name="name"><br><br>
+  <label for="name">Name</label>
+  <input type="name" id="name" name="name"><br><br>
+  <label for="yc">Year & Course</label>
+  <input type="yc" id="yc" name="yc">
+  
   <h3 style="background-color:Royalblue;">Enter Receipent Address Information</h3>
   <label for="email"> Send to email address</label>
   <input type="email" id="email" name="email">
 </form>
 <br><br><br>
 <p style="color: red;">*Incomplete address information will delay your request.*</p>
-<button type="submit"  form="form" value="Submit">Submit</button>
+<button onclick="myFunction()">Submit!</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "A copy has been sent your email!";
+      }
+    </script>
 </div>
 <footer>
   <small>

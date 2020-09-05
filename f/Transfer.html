@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Diploma</title>
+<title>Transcript of Records</title>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +29,6 @@ img {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 .subnav {
   float: left;
   overflow: hidden;
@@ -76,7 +75,6 @@ footer {
   width: 100%;
   background: #A4945C;
 }
-
 </style>
 </head>
 <body>
@@ -86,7 +84,7 @@ footer {
 <div class="navbar">
   <a href="reg.htm">Home</a>
   <div class="subnav">
-    <button class="subnavbtn">Admission <i class="fa f-caret-down"></i></button>
+    <button class="subnavbtn"><a href="Admission.html">Admission <i class="fa fa-caret-down"></i></a></button>
     <div class="subnav-content">
       <a href="Enrollment.html">Enrollment</a>
       <a href="Transfer.html">Transfer</a>
@@ -96,7 +94,7 @@ footer {
   <div class="subnav">
     <button class="subnavbtn">Records <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="StudentRecordsUpdated.php">Students</a>
+      <a href="StudentRecordsUpdated.html">Students</a>
       <a href="Check.html">Check Project/Violation</a>
     </div>
   </div> 
@@ -105,40 +103,43 @@ footer {
     <div class="subnav-content">
       <a href="transcript.htm">Transcript of Records</a>
       <a href="tranfer.htm">Transfer Credentials</a>
-      <a href="diploma.htm">Authenticated Copy of Diploma/a>
+      <a href="diploma.htm">Authenticated Copy of Diploma</a>
       <a href="course.htm">Course Description</a>
     </div>
   </div>
   <a href="#contact">Contact</a>
 </div>
 <div class= "main">
-   <h2 style="background-color:royalblue;">Request Official Transcript</h2>
-  <p style-"color:blue;">Please fill the form below.</p>
+   <h2 style="background-color:royalblue;">Request for Transfer Credentials</h2>
+  <p style="color:blue;">Please fill th form below.</p>
   <form>
-    <label for="quan">Quantity</label>
+  <label for="quan">Quantity</label>
   <input type="name" id="name" name="name"><br><br>
   <label for="name">Name</label>
   <input type="name" id="name" name="name"><br><br>
   <label for="yc">Year & Course</label>
   <input type="yc" id="yc" name="yc">
-  
-    <h3 style="background-color:Royalblue;">Enter Receipent Address Information</h3>
-    <label for="email"> Send to email address</label>
-    <input type="email" id="email" name="email">
+
+  <br><br>
+  <h3 style="background-color:Royalblue;">Enter Receipent Address Information</h3>
+  <label for="email"> Send to email address</label>
+  <input type="email" id="email" name="email">
 </form>
 <br><br><br>
 <p style="color: red;">*Incomplete address information will delay your request.*</p>
-<button onclick="myFunction()">Click me!</button>
+<button onclick="myFunction()">Submit!</button>
     <p id="demo"></p>
     <script>
       function myFunction() {
-        document.getElementById("demo").innerHTML = "Your Digital Copy of Diploma has been sent!";
+        document.getElementById("demo").innerHTML = "A copy has been sent your email!";
       }
     </script>
+</div>
 <footer>
-  <small>School Registrar<br />
-  @2020 All Rights Reserved Registrar</small>
+  <small>
+      School Registrar<br />
+      @2020 All Rights Reserved. Registrar®
+   </small>
 </footer>
 </body>
-
 </html>
