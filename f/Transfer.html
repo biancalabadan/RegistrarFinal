@@ -87,14 +87,13 @@ footer {
     <button class="subnavbtn"><a href="Admission.html">Admission <i class="fa fa-caret-down"></i></a></button>
     <div class="subnav-content">
       <a href="Enrollment.html">Enrollment</a>
-      <a href="Transfer.html">Transfer</a>
-      <a href="Dismissal.html">Dismissal</a>
+      <a href="Dismissal.php">Dismissal</a>
     </div>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Records <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="StudentRecordsUpdated.html">Students</a>
+      <a href="StudentRecordsUpdated.php">Students</a>
       <a href="Check.html">Check Project/Violation</a>
     </div>
   </div> 
@@ -104,7 +103,6 @@ footer {
       <a href="transcript.htm">Transcript of Records</a>
       <a href="tranfer.htm">Transfer Credentials</a>
       <a href="diploma.htm">Authenticated Copy of Diploma</a>
-      <a href="course.htm">Course Description</a>
     </div>
   </div>
   <a href="#contact">Contact</a>
@@ -114,16 +112,16 @@ footer {
   <p style="color:blue;">Please fill th form below.</p>
   <form>
   <label for="quan">Quantity</label>
-  <input type="name" id="name" name="name"><br><br>
+  <input type="name" id="name" name="name" required><br><br>
   <label for="name">Name</label>
-  <input type="name" id="name" name="name"><br><br>
+  <input type="name" id="name" name="name" required><br><br>
   <label for="yc">Year & Course</label>
-  <input type="yc" id="yc" name="yc">
+  <input type="yc" id="yc" name="yc" required>
 
   <br><br>
   <h3 style="background-color:Royalblue;">Enter Receipent Address Information</h3>
   <label for="email"> Send to email address</label>
-  <input type="email" id="email" name="email">
+  <input type="email" id="email" name="email" required>
 </form>
 <br><br><br>
 <p style="color: red;">*Incomplete address information will delay your request.*</p>
