@@ -58,10 +58,10 @@
 			</div>	
 
 		  	<div class="subnav">
-				<button class="subnavtn">Request <i class="fa fa-caret-down"></i></button>
+				<button class="subnavbtn">Request <i class="fa fa-caret-down"></i></button>
 				<div class="subnav-content">
-					<a href="transcript.htm">Transcript of Records</a>
-					<a href="transfer.htm">Transfer Credentials</a>
+					<a href="Transcript.htm">Transcript of Records</a>
+					<a href="Transfer.htm">Transfer Credentials</a>
 					<a href="diploma.htm">Authenticated Copy of Diploma</a>
 				</div>
 			</div>
