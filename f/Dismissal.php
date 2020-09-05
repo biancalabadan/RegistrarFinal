@@ -46,7 +46,7 @@
 		     		<div class="subnav-content">
 		     			<a href="Enrollment.html">Enrollment</a>
 		     			<a href="Transfer.html">Transfer</a>
-		  			<a href="Dismissal.html">Dismissal</a>
+		  			<a href="Dismissal.php">Dismissal</a>
 		    		</div>
 			</div>
 
