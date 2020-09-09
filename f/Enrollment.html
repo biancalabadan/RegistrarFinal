@@ -8,10 +8,10 @@
 	
 	<body>
 		<div class="logonav">
-			<img class="logo" src="xu.png">
+			<img class="logo" src="xu.png"> <!--displays image-->
 		</div>
 
-		<div class="navbar">
+		<div class="navbar"> <!--Creates navigation bar-->
 			<a href="home.html">Home</a>
 			
 			<div class="subnav"> 
@@ -42,8 +42,8 @@
 
 		<div class="row">
   <div class="leftcolumn">
-    <form action="addstudent.php" method="post">
-		<table>
+    <form action="addstudent.php" method="post"> <!--Creates a form and once submitted, will perform the action in addstudent.php, post method requests web servers to accept data enclosed in body of request message for storing -->
+		<table> <!--Creates a table that accepts input from user-->
 			<tr>
 				<td>Full Name :</td>
 				<td><input type="text" name="sname" required></td>
@@ -67,7 +67,7 @@
 				<td><input type="text" name="contact" required></td>
 			</tr>
 			
-			<tr>
+			<tr> <!--Requires all this to be checked, otherwise it won’t proceed-->
 				<td>Requirements :</td>
 				<td><input type="checkbox" name="req" required>
 					<label for="en">Application Form</label><br>
@@ -90,7 +90,7 @@
 			</tr>
 			
 			<tr>
-				<td><input type="submit" name="submit" value="submit"></td>
+				<td><input type="submit" name="submit" value="submit"></td> <!--Creates a submit button-->
 			</tr>
 		</table>
       </form>
