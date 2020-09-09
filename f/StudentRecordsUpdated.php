@@ -6,29 +6,30 @@
 		<title>Student Records</title>
 		
 		<style>
+			/* design or style for the body */
 			body {
 				font-family: Arial, Helvetica, sans-serif;
   				margin: 0;
 			}
 			
-			/* Header or Blog Title */
+			/* design or style for the header */
 			header {
 				padding:30px;
 				background-color:midnightblue;
 			}
 			
+			/* design or style for the image inside header */
 			header img {
 				max-width: 100%;
 				height: auto;
 			}
 			
-			/* Style the top navigation bar */
+			/* design or style for the navigation bar */
 			.navbar {
 				overflow:hidden;
 				background-color:#996515;
 			}
 			
-			/* Style the topnav links */
 			.navbar a {
 			  float:left;
 			  display:16px;
@@ -89,7 +90,7 @@
 				margin-top:20px;
 			}
 			
-			/* style for text in h1 in the article section */ 
+			/* design or style for the article section in those with labeled h1 */ 
 			article h1 {
 				font-family:Arial;
 				font-color:#F2F1E7;
@@ -103,7 +104,7 @@
 				font-size:20px;
 			}
 			
-			/* Footer */
+			/* design or style for the footer section */
 			footer {
 				padding:20px;
 				position:fixed;
@@ -119,9 +120,10 @@
 	
 	<body>
 		<header>
-			<img src="xu.png" alt="Xavier University Logo">
+			<img src="xu.png" alt="Xavier University Logo"> <!--displays image-->
 		</header>
 		
+		<!--Creates navigation bar-->
 		<nav>
 			<div class="navbar">
 				<a href="home.html">Home</a>
@@ -155,7 +157,7 @@
 		
 		<article>
 			<h1>Student Records</h1>
-			<table class="table1" align="center" border="1" cellpadding="10">
+			<table class="table1" align="center" border="1" cellpadding="10"> <!--Creates a table-->
 				<tr>
 					<th>Name</th>
 					<th>Gender</th>
@@ -164,30 +166,30 @@
 				</tr>
 				
 				<?php
-				$con = mysqli_connect("localhost","root","","newdb");
-				if($con-> connect_error)
+				$con = mysqli_connect("localhost","root","","newdb"); //To connect to the mySQL database server
+				if($con-> connect_error) //check connection
 				{
 					die("Connection failed: ".$con->connect_error);
 				}
 				
-				$sql = "select name,gender,year_course,contact from studentinfo";
-				$result = $con->query($sql);
+				$sql = "select name,gender,year_course,contact from studentinfo"; //Select data from the table studentinfo in the database
+				$result = $con->query($sql); //Perform query
 				
-				if($result-> num_rows > 0) {
+				if($result-> num_rows > 0) { //Fetch a result row
 					while($row = $result-> fetch_assoc()) {
 						echo "<tr>
 					<td>".$row["name"]."</td>
 					<td>".$row["gender"]."</td>
 					<td>".$row["year_course"]."</td>
 					<td>".$row["contact"]."</td>
-				</tr>";
+				</tr>"; //displays data in rows
 					}
 					echo "</table>";
 				}
 				else {
 					echo "0 result";
 				}
-				$con->close();
+				$con->close(); //close the mySQL
 			?>
 		</article>
 		<footer>
