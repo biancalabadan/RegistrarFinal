@@ -1,13 +1,16 @@
-
+/* design or style for the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
+/* design or style for the header */
 .header {
   padding: 30px;
   background-color: midnightblue;
 }
+
+/* design or style for the image*/
 img {
   max-width: 100%;
   height: auto;
@@ -18,7 +21,7 @@ img {
   padding: 15px 20px;
 }
 
-
+/* design or style of navigation bar*/
 .navbar {
   overflow: hidden;
   background-color:#996515;
@@ -40,51 +43,51 @@ img {
 }
 
 .subnav .subnavbtn {
-			  font-size:16px;  
-			  border:none;
-			  outline:none;
-			  color:white;
-			  padding:14px 16px;
-			  background-color:inherit;
-			  font-family:inherit;
-			  margin:0;
-			}
+	font-size:16px;  
+	border:none;
+	outline:none;
+	color:white;
+	padding:14px 16px;
+	background-color:inherit;
+	font-family:inherit;
+	margin:0;
+}
 			
-			.navbar a:hover, .subnav:hover .subnavbtn {
-			  background-color: dimgray;
-			}
+.navbar a:hover, .subnav:hover .subnavbtn {
+	background-color: dimgray;
+}
 			
-			.subnav-content {
-			  display: none;
-			  position: absolute;
-			  left:0;
-			  background-color:brown;
-			  width:100%;
-			  z-index: 1;
-			}
+.subnav-content {
+	display: none;
+	position: absolute;
+	left:0;
+	background-color:brown;
+	width:100%;
+	z-index: 1;
+}
 			
-			.subnav-content a {
-			  float:left;
-			  color:white;
-			  text-decoration:none;
-			}
+.subnav-content a {
+	float:left;
+	color:white;
+	text-decoration:none;
+}
 			
-			.subnav-content a:hover {
-			  background-color:#eee;
-			  color:black;
-			}
+.subnav-content a:hover {
+	background-color:#eee;
+	color:black;
+}
 			
-			.subnav:hover .subnav-content {
-			  display: block;
-			}
+.subnav:hover .subnav-content {
+	display: block;
+}
 
-
+/* design or style for left column*/
 .leftcolumn {   
   float: left;
   width: 75%;
 }
 
-
+/* design or style for right column*/
 .rightcolumn {
   float: left;
   width: 25%;
@@ -92,8 +95,7 @@ img {
   padding-left: 20px;
 }
 
-
-
+/* design or style for class named card*/
 .card {
   background-color: white;
   padding: 20px;
@@ -106,15 +108,16 @@ img {
   clear: both;
 }
 
+/* design or style for the footer section */
 footer {
-				padding:20px;
-				position:fixed;
-				bottom:0;
-				left:0;
-				width:100%;
-				background-color: #A4945C;
-				text-align:center;
-			}
+	padding:20px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-color: #A4945C;
+	text-align:center;
+}
 
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
