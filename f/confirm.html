@@ -49,35 +49,15 @@
 
     <div class="row">
   <div class="leftcolumn">
-    <h2 style="background-color:royalblue;">Request Official Transcript</h2>
-    <p>Complete the form below for request.</p>
-    <form action="confirm.html" method="post">
-    <table>
-      <tr>
-        <td>Full Name :</td>
-        <td><input type="text" name="sname" required></td>
-      </tr>
-     
-      <tr>
-        <td>Year & Course :</td>
-        <td><input type="text" name="year_course" required></td>
-      </tr>
-      
-      <tr>
-        <td>Contact :</td>
-        <td><input type="text" name="contact" required </td>
-      </tr>
-      
-      <tr>
-      </tr>
-      
-      <tr>
-        <td>
-          <button type="submit" >submit</button><br>
-        </td>
-      </tr>
-    </table>
-      </form>
+  	<br>
+        <button onclick="myFunction()">Confirm</button>
+        <p id="demo"></p>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "A copy has been sent!";
+      }
+    </script>
+
     </div>
   </div>
       
