@@ -1,9 +1,4 @@
-* {
-
-  margin: 0;
-  padding: 0;
-}
-
+/* design or style for the body */
 body {
   font-family: Arial;
   padding: 10px;
@@ -11,11 +6,13 @@ body {
   margin-bottom:50px;
 }
 
-
+/* design or style for the header */
 .header {
   padding: 30px;
   height: 100vh;
 }
+
+/* design or style for the image*/
 img {
   max-width: 100%;
   height: auto;
@@ -26,6 +23,7 @@ img {
   padding: 15px 20px;
 }
 
+/* design or style for button*/
 .button h1{
   color: #00004C;
   font-size: 70px;
@@ -55,7 +53,7 @@ img {
   color: white;
 }
 
-.footer {
+.footer { /* design or style for the footer section */
 
   padding: 20px;
   text-align: center;
