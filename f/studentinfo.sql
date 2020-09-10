@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2020 at 05:59 AM
+-- Generation Time: Sep 10, 2020 at 12:08 PM
 -- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.33
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,6 +36,18 @@ CREATE TABLE `studentinfo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `studentinfo`
+--
+
+INSERT INTO `studentinfo` (`Id`, `name`, `gender`, `year_course`, `contact`) VALUES
+(7, 'Bianca Labadan', 'f', 'BSIT 3', 'bianca13@gmail.com'),
+(8, 'Chen Moncay', 'f', 'BSIT 3', 'chenmoncay@yahoo.com'),
+(9, 'Lovearn Bual', 'f', 'BSIT - ', 'love@yahoo.com'),
+(10, 'Rey Christian Llamas', 'm', 'BSIT 3', 'reychristian101@gmail.com'),
+(11, 'Niznik Alamban', 'f', 'BSIT - ', 'alambanniznik@gmail.com'),
+(12, 'Kathleen Pcanut', 'f', 'BSIT - ', 'kathleenpacanut@gmail.com');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -53,7 +65,7 @@ ALTER TABLE `studentinfo`
 -- AUTO_INCREMENT for table `studentinfo`
 --
 ALTER TABLE `studentinfo`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

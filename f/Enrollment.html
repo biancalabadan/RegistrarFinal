@@ -8,14 +8,14 @@
 	
 	<body>
 		<div class="logonav">
-			<img class="logo" src="xu.png"> <!--displays image-->
+			<img class="logo" src="xu.png">
 		</div>
 
-		<div class="navbar"> <!--Creates navigation bar-->
+		<div class="navbar">
 			<a href="home.html">Home</a>
 			
 			<div class="subnav"> 
-		  		<button class="subnavbtn">Enrollment/Dismissal<i class="fa fa-caret-down"></i></button>
+		  		<button class="subnavbtn">Admission <i class="fa fa-caret-down"></i></button>
 		    		<div class="subnav-content">
 		      			<a href="Enrollment.html">Enrollment</a>
 		      			<a href="Dismissal.php">Dismissal</a>
@@ -26,7 +26,7 @@
 				<button class="subnavbtn">Records <i class="fa fa-caret-down"></i></button>
 				<div class="subnav-content">
 					<a href="StudentRecordsUpdated.php">Students</a>
-					<a href="Check.html">Check Project/Violation</a>
+					<a href="Check.php">Check Project/Violation</a>
 				</div>
 			</div>
 
@@ -42,12 +42,13 @@
 
 		<div class="row">
   <div class="leftcolumn">
-    <form action="addstudent.php" method="post"> <!--Creates a form and once submitted, will perform the action in addstudent.php, post method requests web servers to accept data enclosed in body of request message for storing -->
-		<table> <!--Creates a table that accepts input from user-->
+    <form action="addstudent.php" method="post">
+		<table>
 			<tr>
 				<td>Full Name :</td>
 				<td><input type="text" name="sname" required></td>
 			</tr>
+	
 		
 			<tr>
 				<td>Gender :</td>
@@ -67,7 +68,7 @@
 				<td><input type="text" name="contact" required></td>
 			</tr>
 			
-			<tr> <!--Requires all this to be checked, otherwise it won’t proceed-->
+			<tr>
 				<td>Requirements :</td>
 				<td><input type="checkbox" name="req" required>
 					<label for="en">Application Form</label><br>
@@ -90,7 +91,7 @@
 			</tr>
 			
 			<tr>
-				<td><input type="submit" name="submit" value="submit"></td> <!--Creates a submit button-->
+				<td><input type="submit" name="submit" value="submit"></td>
 			</tr>
 		</table>
       </form>
