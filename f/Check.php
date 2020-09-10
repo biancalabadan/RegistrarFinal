@@ -1,7 +1,7 @@
 <?php
 
  //resource address
- $reponse = json_decode(file_get_contents('http://localhost/Reg/api.php'));
+ $reponse = json_decode(file_get_contents('http://localhost/f/api.php'));
 
  
 
