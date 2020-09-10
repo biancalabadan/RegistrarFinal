@@ -137,7 +137,7 @@
 					<button class="subnavbtn">Records <i class="fa fa-caret-down"></i></button>
 					<div class="subnav-content">
 						<a href="StudentRecordsUpdated.php">Students</a>
-						<a href="Check.html">Check Project/Violation</a>
+						<a href="Check.php">Check Project/Violation</a>
 					</div>
 				</div>
 				
