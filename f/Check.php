@@ -1,7 +1,7 @@
 <?php
 
  //resource address
- $reponse = json_decode(file_get_contents('http://localhost/ITCC14_FinalProject-master/api.php'));
+ $reponse = json_decode(file_get_contents('http://localhost/Reg/api.php'));
 
  
 
@@ -89,8 +89,10 @@
 			.subnav:hover .subnav-content {
 			  display: block;
 			}
-			
-			
+			.table1 th, td {
+				font-family:Arial;
+				font-size:20px;
+			}
 			/* Footer */
 			footer {
 				padding:20px;
@@ -134,41 +136,40 @@
 					<button class="subnavbtn">Request <i class="fa fa-caret-down"></i></button>
 					<div class="subnav-content">
 						<a href="Transcript.htm">Transcript of Records</a>
-						<a href="Transfer.html">Transfer Credentials</a>
+						<a href="Transfer.html">Transfer</a>
 						<a href="diploma.htm">Authenticated Copy of Diploma</a>
 					</div>
 				</div>
-				
 			</div>
 		</nav>
 
+
 		<title>Dismissal</title>
-	<table class="table1" align="center" border="1" cellpadding="10">
-        <thead>
+	
+ 	<table class="table1" align="center" border="1" cellpadding="10">
             <tr>
-                <td>Student ID</td><br>
-                <td>Name</td><br>
-                <td>Year</td><br>
-                <td>Course</td><br>
-                <td>Contact no.</td><br>
-                <td>Violations</td><br>
+                <td>Student ID</td>
+                <td>Name</td>
+                <td>Year</td>
+                <td>Course</td>
+                <td>Contact no.</td>
+                <td>Violations</td>
             </tr>
-        </thead>
-        <tbody>
+     
+       
 			<?php foreach ($reponse as $students): ?>
             <tr>
-                <td><?=$students->student_id?></td><br>
-                <td><?=$students->name?></td><br>
-                <td><?=$students->year?></td><br>
-                <td><?=$students->course?></td><br>
-                <td><?=$students->email?></td><br>
-                <td><?=$students->violation?></td><br>
+                <td><?=$students->student_id?></td>
+                <td><?=$students->name?></td>
+                <td><?=$students->year?></td>
+                <td><?=$students->course?></td>
+                <td><?=$students->email?></td>
+                <td><?=$students->violation?></td>
             </tr>
             <?php endforeach ?>
-          <tbody>
-        </table>		
-		
-		
+          
+        
+		</table>
 		<footer>
 			<small>
 				School Registrar <br />
